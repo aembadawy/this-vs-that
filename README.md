@@ -10,3 +10,5 @@
 | **.id()**: Manually assigns an ID to a view, When using *ForEach* on non-identifiable data. | **Identifiable** *Protocol*: Requires objects to have an *id* property, When working with identifiable models. |
 | **.lineLimit(n)**: Limits number of visible lines, Used to prevent overflow. | **.truncationMode(.tail/.head/.middle)**: Controls how text is truncated	Choose how cut-off text appears. |
 | **.textInputAutocapitalization(_:)**: Introduced in iOS 15 ✅, Offers better support and more flexibility. | **.autocapitalization(_:)**: Works on TextField and other text inputs, Deprecated in iOS 15 ❌. |
+| **TextField**: Used for entering normal text, The entered text is visible, Can be customized with keyboard types, autocapitalization, and text formatting. | **SecureField** *(For Passwords & Sensitive Data)*: Used for entering secure/sensitive information like passwords, The entered text is **hidden**, Does **not** support features like autocapitalization or autocorrection. |
+
