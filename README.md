@@ -12,6 +12,7 @@
 | **.textInputAutocapitalization(_:)**: Introduced in iOS 15 ✅, Offers better support and more flexibility. | **.autocapitalization(_:)**: Works on TextField and other text inputs, Deprecated in iOS 15 ❌. |
 | **TextField**: Used for entering normal text, The entered text is visible, Can be customized with keyboard types, autocapitalization, and text formatting. | **SecureField** *(For Passwords & Sensitive Data)*: Used for entering secure/sensitive information like passwords, The entered text is **hidden**, Does **not** support features like autocapitalization or autocorrection. |
 | **.sheet()**: Shows a *modal sheet* with swipe down to dismiss by ***default***, used for temporary interactions (e.g., forms, settings). | **.fullScreenCover()**: Covers the entire screen, and requires explicit dismissal. Dedicated full-screen flows (e.g., onboarding, authentication). |
+| **@State**: Used to create and manage mutable state within a view. It allows you to store and track changes to a value so that your view can automatically update whenever that value changes. | **@Binding**: Used for creating a two-way connection between a property's value in one view and its| value in another view or a parent view. It's typically used to pass data between views and synchronize changes bidirectionally. |
 
 # lazy-vs-computed-property
 
