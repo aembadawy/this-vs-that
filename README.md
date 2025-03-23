@@ -14,6 +14,7 @@
 | **.sheet()**: Shows a *modal sheet* with swipe down to dismiss by ***default***, used for temporary interactions (e.g., forms, settings). | **.fullScreenCover()**: Covers the entire screen, and requires explicit dismissal. Dedicated full-screen flows (e.g., onboarding, authentication). |
 | **@State**: Used to create and manage mutable state within a view. It allows you to store and track changes to a value so that your view can automatically update whenever that value changes. | **@Binding**: Used for creating a two-way connection between a property's value in one view and its| value in another view or a parent view. It's typically used to pass data between views and synchronize changes bidirectionally. |
 | **@StateObject**: Same as *@State* but deals with objects instead of variables. | **@ObservedObject**: Same as *Binding* creates a two-way connection but for objects. |
+| **@Environment**: Use *@Environment* for system-defined values (e.g., colorScheme, locale), Requires an explicit key from EnvironmentValues. | **@EnvironmentObject**: Use *@EnvironmentObject* for custom, shared objects that need to be passed down a hierarchy without explicitly passing them to each child view. |
 
 # lazy-vs-computed-property
 
