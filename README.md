@@ -15,6 +15,7 @@
 | **@State**: Used to create and manage mutable state within a view. It allows you to store and track changes to a value so that your view can automatically update whenever that value changes. | **@Binding**: Used for creating a two-way connection between a property's value in one view and its| value in another view or a parent view. It's typically used to pass data between views and synchronize changes bidirectionally. |
 | **@StateObject**: Same as *@State* but deals with objects instead of variables. | **@ObservedObject**: Same as *Binding* creates a two-way connection but for objects. |
 | **@Environment**: Use *@Environment* for system-defined values (e.g., colorScheme, locale), Requires an explicit key from EnvironmentValues. | **@EnvironmentObject**: Use *@EnvironmentObject* for custom, shared objects that need to be passed down a hierarchy without explicitly passing them to each child view. |
+| **@ObservedObject**: used for managing external data sources by creating a two-way connection for objects, Requires *ObservableObject* protocol, Must use *@Published*, Less efficient (rebuilds full view). | **@Observable**: *@Observable* (introduced in iOS 17) is the new and improved approach, **No** Need for *ObservableObject*, *@Published* to track properties change as it automatically detects changes, More efficient (updates only changed properties). |
 
 # lazy-vs-computed-property
 
