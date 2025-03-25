@@ -1,6 +1,6 @@
 # this-vs-that
 
-# SwiftUI Modifiers
+## SwiftUI Modifiers
 
 | This | That |
 | --- | --- |
@@ -19,13 +19,13 @@
 | **@Environment**: Use *@Environment* for system-defined values (e.g., colorScheme, locale), Requires an explicit key from EnvironmentValues. | **@EnvironmentObject**: Use *@EnvironmentObject* for custom, shared objects that need to be passed down a hierarchy without explicitly passing them to each child view. |
 | **@ObservedObject**: used for managing external data sources by creating a two-way connection for objects, Requires *ObservableObject* protocol, Must use *@Published*, Less efficient (rebuilds full view). | **@Observable**: *@Observable* (introduced in iOS 17) is the new and improved approach, **No** Need for *ObservableObject*, *@Published* to track properties change as it automatically detects changes, More efficient (updates only changed properties). |
 
-# lazy-vs-computed-property
+## Lazy vs Computed
 
-## Lazy Variable
+#### Lazy Variable
 
 Lazy variable is only computed once when accessed. Perfect for use when the variable requires heavy computation.
 
-## Computed Property
+#### Computed Property
 
 Computed property is recalculated each time it's accessed. And unlike *lazy var* they don't store the value. Instead they provide a getter and an optional setter to indirectly retrieve and set values.
 
@@ -39,7 +39,7 @@ Computed property is recalculated each time it's accessed. And unlike *lazy var*
 
 `Comparison base on medium article` [here](https://mehrdad-ahmadian.medium.com/ios-interview-question-lazy-variables-vs-computed-properties-in-swift-b35fd323cbbd)
 
-# Class vs Struct
+## Class vs Struct
 
 | Class    | Struct |
 | ---      | ---       |
