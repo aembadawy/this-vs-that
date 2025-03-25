@@ -1,5 +1,7 @@
 # this-vs-that
 
+# SwiftUI Modifiers
+
 | This | That |
 | --- | --- |
 | **scaledToFill()**: focuses solely on filling the frame without regard to the aspect ratio. | **aspectRatio(contentMode: .fill)**: ensures the aspect ratio is preserved during the scaling process. |
@@ -36,3 +38,14 @@ Computed property is recalculated each time it's accessed. And unlike *lazy var*
 
 
 `Comparison base on medium article` [here](https://mehrdad-ahmadian.medium.com/ios-interview-question-lazy-variables-vs-computed-properties-in-swift-b35fd323cbbd)
+
+# Class vs Struct
+
+| Class    | Struct |
+| ---      | ---       |
+| Reference type | Value type        |
+| Mutable even if declared constant     | immutable if declared constant      |
+| Stored in heap    | Stored in stack    |
+| Has inheritance, works with objc    | Thread safe, less memory leaks    |
+
+The official apple advice is that we start with a struct when defining a new custom object, and only convert it to class when needed, i.e. it needs inheritance or needs to work with objc.
