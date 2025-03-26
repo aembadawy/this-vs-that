@@ -19,6 +19,7 @@
 | **@Environment**: Use *@Environment* for system-defined values (e.g., colorScheme, locale), Requires an explicit key from EnvironmentValues. | **@EnvironmentObject**: Use *@EnvironmentObject* for custom, shared objects that need to be passed down a hierarchy without explicitly passing them to each child view. |
 | **@ObservedObject**: used for managing external data sources by creating a two-way connection for objects, Requires *ObservableObject* protocol, Must use *@Published*, Less efficient (rebuilds full view). | **@Observable**: *@Observable* (introduced in iOS 17) is the new and improved approach, **No** Need for *ObservableObject*, *@Published* to track properties change as it automatically detects changes, More efficient (updates only changed properties). |
 | **.foregroundColor(_:)**: Changes the color of text, shapes, or images, Accepts a single ***Color*** value. | **foregroundStyle(_:) (Introduced in iOS 16)**: More powerful, allowing complex styles like gradients, patterns, and materials, Accepts ShapeStyle, which includes: *Color* (same as foregroundColor), *Gradients* (linear, radial, or angular), *Materials* (like ultraThinMaterial), *Hierarchical styles* (e.g., .primary, .secondary). |
+| **.overlay(_:)**: Adds a new view on top of another view, within the same parent view, Doesn't affect layout as the base view retains its position. | **.zIndex(_:)**:  Controls the stacking order of views within the same *Z-axis (depth)*, affects layout as it changes the rendering order in a stack. |
 
 ## Lazy vs Computed
 
