@@ -21,6 +21,17 @@
 | **.foregroundColor(_:)**: Changes the color of text, shapes, or images, Accepts a single ***Color*** value. | **foregroundStyle(_:) (Introduced in iOS 16)**: More powerful, allowing complex styles like gradients, patterns, and materials, Accepts ShapeStyle, which includes: *Color* (same as foregroundColor), *Gradients* (linear, radial, or angular), *Materials* (like ultraThinMaterial), *Hierarchical styles* (e.g., .primary, .secondary). |
 | **.overlay(_:)**: Adds a new view on top of another view, within the same parent view, Doesn't affect layout as the base view retains its position. | **.zIndex(_:)**:  Controls the stacking order of views within the same *Z-axis (depth)*, affects layout as it changes the rendering order in a stack. |
 
+## SPM vs CocoaPods
+
+| SPM | CocoaPods |
+| --- | --- |
+| Built-in dependency manager by Apple, i.e. Faster. | One of the oldest and most popular iOS dependency managers. |
+| Uses Package.swift file to manage dependencies. | Uses a Podfile to define dependencies. |
+| Supports dependencies hosted on GitHub, GitLab, or other Git repositories, but offers Limited support for Objective-C libraries. | Supports Objective-C and Swift projects. |
+| Does not require workspace files (.xcworkspace). | Requires .xcworkspace, which adds extra project complexity. |
+| Smaller library ecosystem compared to CocoaPods. | Larger library ecosystem – Many third-party libraries are still CocoaPods-first. |
+
+
 ## Lazy vs Computed
 
 #### Lazy Variable
