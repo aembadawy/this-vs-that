@@ -21,6 +21,7 @@
 | **.foregroundColor(_:)**: Changes the color of text, shapes, or images, Accepts a single ***Color*** value. | **foregroundStyle(_:) (Introduced in iOS 16)**: More powerful, allowing complex styles like gradients, patterns, and materials, Accepts ShapeStyle, which includes: *Color* (same as foregroundColor), *Gradients* (linear, radial, or angular), *Materials* (like ultraThinMaterial), *Hierarchical styles* (e.g., .primary, .secondary). |
 | **.overlay(_:)**: Adds a new view on top of another view, within the same parent view, Doesn't affect layout as the base view retains its position. | **.zIndex(_:)**:  Controls the stacking order of views within the same *Z-axis (depth)*, affects layout as it changes the rendering order in a stack. |
 | **NavigationStack**: Introduced in iOS 16, NavigationStack replaces NavigationView for managing navigation in a stack-based manner. | **NavigationDestination**:  Works A view modifier that works within NavigationStack to specify how a view should navigate based on data types. |
+| **NavigationLink** *(Used in both NavigationView and NavigationStack)*: NavigationLink creates a tappable UI element that navigates to a destination when tapped, Works with both NavigationView (iOS 13-15) and NavigationStack (iOS 16+). | **NavigationDestination** *(iOS 16+)*:  Works only inside NavigationStack, Defines a navigation rule based on a data type, Supports deep linking and dynamic navigation paths. |
 
 ## SPM vs CocoaPods
 
