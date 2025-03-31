@@ -2,6 +2,8 @@
 
 ### Swift Property Wrappers & View Modifiers: A Comparison Guide
 
+In the following section, I will compare similar property wrappers and view modifiers in Swift, particularly those that can be easily confused with one another. Additionally, if a property or modifier has been deprecated in favor of a newer, improved alternative, it will be mentioned as well. This serves as a quick cheat sheet to help determine when to use each property or view modifier efficiently.
+
 | This | That |
 | --- | --- |
 | **scaledToFill()**: focuses solely on filling the frame without regard to the aspect ratio. | **aspectRatio(contentMode: .fill)**: ensures the aspect ratio is preserved during the scaling process. |
