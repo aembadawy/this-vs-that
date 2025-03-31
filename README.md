@@ -1,6 +1,6 @@
 # this-vs-that
 
-## SwiftUI Modifiers
+### Swift Property Wrappers & View Modifiers: A Comparison Guide
 
 | This | That |
 | --- | --- |
