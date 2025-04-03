@@ -27,6 +27,15 @@ In the following section, I will compare similar property wrappers and view modi
 | **NavigationView** *(iOS 13-15, Deprecated in iOS 16)*: Supports NavigationLink for navigation between views, Does not support deep linking or programmatic navigation using a path, Deprecated in ***iOS 16*** in favor of NavigationStack. | **NavigationStack** *(iOS 16+)*:  Introduced as a replacement for NavigationView, Supports deep linking and programmatic navigation using path, Uses navigationDestination(for:) instead of NavigationLink for dynamic navigation. |
 | **NavigationLink** *(Used in both NavigationView and NavigationStack, iOS 13-15)*: NavigationLink creates a tappable UI element that navigates to a destination when tapped, Works with both NavigationView (iOS 13-15) and NavigationStack (iOS 16+). | **NavigationDestination** *(iOS 16+)*:  Works only inside NavigationStack, Defines a navigation rule based on a data type, Supports deep linking and dynamic navigation paths. |
 
+## Protocols
+
+| Protocol | usage |
+| --- | --- |
+| Codable. | Enables encoding and decoding of data aka *(serialization & deserialization)*, is a type alias for Encodable & Decodable. |
+| Identifiable. | Provides a unique identity for an object, Must have a property called id, typically a UUID or some other unique identifier.. |
+| Equatable. | Enables value comparison using ***==***, often required when comparing objects, especially in unit tests or filtering. |
+| Hashable. | Enables hashing, allowing objects to be stored in sets or used as dictionary keys, Must implement hash(into:) (though the compiler can often auto-synthesize it). |
+
 ## SPM vs CocoaPods
 
 | SPM | CocoaPods |
