@@ -31,10 +31,10 @@ In the following section, I will compare similar property wrappers and view modi
 
 | Protocol | usage |
 | --- | --- |
-| Codable. | Enables encoding and decoding of data aka *(serialization & deserialization)*, is a type alias for Encodable & Decodable. |
-| Identifiable. | Provides a unique identity for an object, Must have a property called id, typically a UUID or some other unique identifier.. |
-| Equatable. | Enables value comparison using ***==***, often required when comparing objects, especially in unit tests or filtering. |
-| Hashable. | Enables hashing, allowing objects to be stored in sets or used as dictionary keys, Must implement hash(into:) (though the compiler can often auto-synthesize it). |
+| **Codable**. | Enables encoding and decoding of data aka *(serialization & deserialization)*, is a type alias for Encodable & Decodable. |
+| **Identifiable**. | Provides a unique identity for an object, Must have a property called id, typically a UUID or some other unique identifier.. |
+| **Equatable**. | Enables value comparison using ***==***, often required when comparing objects, especially in unit tests or filtering. |
+| **Hashable**. | Enables hashing, allowing objects to be stored in sets or used as dictionary keys, Must implement hash(into:) (though the compiler can often auto-synthesize it). |
 
 ## SPM vs CocoaPods
 
