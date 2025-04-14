@@ -39,12 +39,19 @@ In the following section, I will compare similar property wrappers and view modi
 | **Hashable**. | Enables hashing, ***implies Equatable***, allowing objects to be stored in sets or used as dictionary keys, Must implement hash(into:) (though the compiler can often auto-synthesize it). |
 
 
-## Protocols
+## Macros
+
+#### In Swift, a macro is a way to manipulate source code at compile time. 
+- Generate code based on annotationsz.
+- Eliminate boilerplate (e.g., Equatable, Codable, View conformances).
+- 
 
 | Protocol | usage |
 | --- | --- |
 **@Observable** *(introduced in iOS 17)*: | is the new and improved approach, **No** Need for *ObservableObject*, *@Published* to track properties change as it automatically detects changes, More efficient (updates only changed properties). |
 **@Previewable** *(introduced in iOS 17)*: | The previewable macro was introduced in iOS 17.0+ to allow a dynamic property to appear inline in a preview.  |
+**@Codable**: | This macro could auto-synthesize Codable conformance without you writing anything.  |
+
 
 ## SPM vs CocoaPods
 
