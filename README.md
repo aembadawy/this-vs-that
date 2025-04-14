@@ -29,9 +29,9 @@ In the following section, I will compare similar property wrappers and view modi
 | **.keyboardType(.emailAddress)**: Controls the keyboard layout shown to the user. For .emailAddress, it shows a keyboard with @ and . buttons more accessible. | **.textContentType(.emailAddress)**: Tells the system what type of information the field expects. Enables autofill, iCloud Keychain, email suggestions, etc. |
 
 
-## Macros
+## Protocols
 
-| Macro | usage |
+| Protocol | usage |
 | --- | --- |
 | **Codable**. | Enables encoding and decoding of data aka *(serialization & deserialization)*, is a type alias for Encodable & Decodable. |
 | **Identifiable**. | Provides a unique identity for an object, Must have a property called id, typically a UUID or some other unique identifier.. |
@@ -44,9 +44,8 @@ In the following section, I will compare similar property wrappers and view modi
 #### In Swift, a macro is a way to manipulate source code at compile time. 
 - Generate code based on annotationsz.
 - Eliminate boilerplate (e.g., Equatable, Codable, View conformances).
-- 
-
-| Protocol | usage |
+  
+| Macro | usage |
 | --- | --- |
 **@Observable** *(introduced in iOS 17)*: | is the new and improved approach, **No** Need for *ObservableObject*, *@Published* to track properties change as it automatically detects changes, More efficient (updates only changed properties). |
 **@Previewable** *(introduced in iOS 17)*: | The previewable macro was introduced in iOS 17.0+ to allow a dynamic property to appear inline in a preview.  |
