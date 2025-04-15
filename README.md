@@ -49,8 +49,6 @@ In the following section, I will compare similar property wrappers and view modi
 | --- | --- |
 **@Observable** *(introduced in iOS 17)*: | is the new and improved approach, **No** Need for *ObservableObject*, *@Published* to track properties change as it automatically detects changes, More efficient (updates only changed properties). |
 **@Previewable** *(introduced in iOS 17)*: | The previewable macro was introduced in iOS 17.0+ to allow a dynamic property to appear inline in a preview.  |
-**@Codable**: | This macro could auto-synthesize Codable conformance without you writing anything.  |
-
 
 ## SPM vs CocoaPods
 
