@@ -52,6 +52,8 @@ In the following section, I will compare similar property wrappers and view modi
 
 ## SPM vs CocoaPods
 
+Cocoapods are going to drop support by Dec. 2026 all iOS Apps must depend on SPM moving forward to ensure updates.
+
 | SPM | CocoaPods |
 | --- | --- |
 | Built-in dependency manager by Apple, i.e. Faster. | One of the oldest and most popular iOS dependency managers. |
