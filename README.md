@@ -50,19 +50,6 @@ In the following section, I will compare similar property wrappers and view modi
 **@Observable** *(introduced in iOS 17)*: | is the new and improved approach, **No** Need for *ObservableObject*, *@Published* to track properties change as it automatically detects changes, More efficient (updates only changed properties). |
 **@Previewable** *(introduced in iOS 17)*: | The previewable macro was introduced in iOS 17.0+ to allow a dynamic property to appear inline in a preview.  |
 
-## SPM vs CocoaPods
-
-Cocoapods are going to drop support by Dec. 2026 all iOS Apps must depend on SPM moving forward to ensure updates.
-
-| SPM | CocoaPods |
-| --- | --- |
-| Built-in dependency manager by Apple, i.e. Faster. | One of the oldest and most popular iOS dependency managers. |
-| Uses Package.swift file to manage dependencies. | Uses a Podfile to define dependencies. |
-| Supports dependencies hosted on GitHub, GitLab, or other Git repositories, but offers Limited support for Objective-C libraries. | Supports Objective-C and Swift projects. |
-| Does not require workspace files (.xcworkspace). | Requires .xcworkspace, which adds extra project complexity. |
-| Smaller library ecosystem compared to CocoaPods. | Larger library ecosystem – Many third-party libraries are still CocoaPods-first. |
-
-
 ## Lazy vs Computed
 
 #### Lazy Variable
